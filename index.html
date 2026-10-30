@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mosaic Phone OS Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="phone-container">
+        <!-- Phone Bezel / Screen -->
+        <div class="phone-screen">
+            <!-- Status Bar -->
+            <div class="status-bar">
+                <span>09:41</span>
+                <span class="system-status">Mosaic OS // Bi-Cameral Sync: Active</span>
+                <span>🔋 100%</span>
+            </div>
+
+            <!-- Header -->
+            <div class="os-header">
+                <h1>MOSAIC OS</h1>
+                <p>Sovereign Bi-Cameral Runtime</p>
+            </div>
+
+            <!-- Bi-Cameral Hemisphere Visualizer -->
+            <div class="hemispheres-container">
+                <div class="hemisphere left-brain">
+                    <h3>Left Core</h3>
+                    <p>Deterministic / Secure</p>
+                    <span id="left-status" class="status-badge">Idle</span>
+                </div>
+                <div class="sealine-bridge">
+                    <span>⚡ Sealine Bridge</span>
+                </div>
+                <div class="hemisphere right-brain">
+                    <h3>Right Neural</h3>
+                    <p>Local SLM / Intent</p>
+                    <span id="right-status" class="status-badge">Standby</span>
+                </div>
+            </div>
+
+            <!-- Interactive Intent Input -->
+            <div class="intent-section">
+                <label for="user-intent">User Intent (Prompt):</label>
+                <input type="text" id="user-intent" placeholder="e.g., Summarize offline messages & secure logs">
+                <button onclick="processIntent()">Execute via Sealine</button>
+            </div>
+
+            <!-- Dynamic Tile-Based Mosaic UI Feed -->
+            <div class="mosaic-feed" id="mosaic-feed">
+                <div class="tile">
+                    <h4>System Core Ready</h4>
+                    <p>Zero telemetry leakage. Local runtime active.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
